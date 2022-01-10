@@ -8,7 +8,7 @@
     <title>FlEXBOX</title>
     <style>
         .container {
-            height: 400px;
+            height: 100px;
 
             border: dotted green;
             display: flex;
@@ -31,6 +31,18 @@
         #box2 {
             flex-grow: 2;
         }
+
+        .login {
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .new {
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 
 
@@ -52,6 +64,18 @@
 
     </div>
     </div>
+    <section class="login">
+        <div class="new">
+            <h2>Plz log in</h2>
+            <form action=""><input type="email" placeholder="your email">
+            </form>
+            <form action=""><input type="password" placeholder="your password">
+            </form>
+        </div>
+
+    </section>
+
+
 </body>
 
 </html>
