@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlEXBOX</title>
     <style>
-        .container {
-            height: 100px;
-
-            border: dotted green;
-            display: flex;
-
+        section nav a {
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 20px;
 
         }
 
-
+        .a {
+            display: flex;
+            flex-direction: column;
+        }
 
         .box {
+            display: flex;
             width: 200px;
             border: dotted red;
             font-size: 3em;
@@ -51,19 +53,29 @@
 
 
 <body>
-    <h1>This is flexbox</h1>
-    <div class="container">
 
-        <div id="box1" class="box">
-            <p>BOX-1</p>
+    <section class="first">
+        <nav><a href="" class="fa"></a>
+            <a href="" class="fa">Home</a>
+            <a href="" class="fa">Details</a>
+            <a href="" class="fa">About</a>
+        </nav>
+    </section>
+
+    <div class="a">
+        <div>
+            <h1>This is flexbox</h1>
+
+            <div id="box1" class="box">
+                <p>BOX-1</p>
+            </div>
+            <div id="box2" class="box">
+                <p>BOX-2</p>
+            </div>
         </div>
-        <div id="box2" class="box">
-            <p>BOX-2</p>
-        </div>
-
-
     </div>
     </div>
+
     <section class="login">
         <div class="new">
             <h2>Plz log in</h2>
